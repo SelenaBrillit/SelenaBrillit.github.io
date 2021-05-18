@@ -1,0 +1,63 @@
+h1{
+    color:rgb(245, 238, 238);
+    font-size: 20px;
+    border:1px solid rgb(185, 46, 46);
+    padding: 0px;
+    margin:40px;
+    height: 100px;
+    background:rgb(223, 57, 112);
+}
+body{
+    background:rgb(247, 246, 246);
+}
+div{
+    padding: auto;
+    margin:0px;
+    width: 1000px; ;
+    padding: 0px}
+.viza{
+    margin:10px;
+    width: 250px; ;
+    height: 130px;
+    padding: 60px;
+    
+  
+}
+ .credimas{
+   float: right;
+    margin:-250px;
+    width: 310px;
+    height: 0px;
+    padding: 60px;
+
+    
+   
+}
+ .yape{
+
+    height: 0px; 
+    margin: 450px;;
+    width: 0px;
+    padding: 0px;
+    
+   
+    
+
+}
+ .mastercard{
+    float:left ;
+    margin:5px;
+    width: 400px;
+    height: 10px;
+    padding: 120px;
+  
+}
+ .plin{
+    float: right;
+    margin:70px;
+    width: 0px;
+    height: 200px;
+    padding: 60px;
+  
+    
+}  

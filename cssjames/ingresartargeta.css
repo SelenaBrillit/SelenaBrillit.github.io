@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    border:none;
+    padding: 0px;
+    margin:0px;
+    height: 100px;
+    background:rgba(76, 128, 223, 0.979);
+    font-size: 60px;
+  
+   
+
+}
+h2{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    border:none;
+    padding: 0px;
+    margin:0px;
+    height: 100px;
+    background:rgba(76, 128, 223, 0.979);
+    font-size: 60px;
+}
+p{
+    text-align: center;
+    color:black;
+    font-size: 40px;
+    border: 10px black;
+    padding: 0px;
+    margin:20px;
+    height: 100px;
+    background:rgba(201, 106, 138, 0.979);
+   
+
+    
+    
+}
+body{
+    background:rgb(255, 255, 255)
+
+}

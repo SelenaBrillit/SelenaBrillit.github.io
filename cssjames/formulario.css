@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    color:rgb(32, 8, 139);
+    font-size: 20px;
+    border:none;
+    padding: 0px;
+    margin:0px;
+    height: 100px;
+    background:rgba(4, 0, 17, 0.979);
+    font-size: 60px;
+
+}
+h2{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    border:none;
+    padding: 0px;
+    margin:0px;
+    height: 100px;
+    background:rgba(22, 3, 92, 0.979);
+    font-size: 60px;
+
+}
+body{
+    background: rgba(106, 214, 241, 0.973);
+}
+a{
+    float: right;
+}
