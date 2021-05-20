@@ -1,0 +1,41 @@
+h1{
+    display: block;
+    background:rgba(6, 12, 24, 0.767);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom:0px;
+    color: rgba(13, 39, 87, 0.979);
+    font-size: 60px;
+
+}
+h2{
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    border:none;
+    padding: 0px;
+    margin-left: auto;
+    margin-top:0px;
+    height: 100px;
+    width: auto;
+    background:rgba(248, 125, 76, 0.979);
+    font-size: 60px;
+}
+.face{
+    margin-left: 14cm;
+    margin-bottom: 4cm;
+    margin-right: 10cm;
+    margin-top: 4cm;
+}
+.twiter{
+    margin-left: 14cm;
+    margin-bottom: 4cm;
+    margin-right: 10cm;
+    margin-top: 4cm
+}
+.inst{
+    margin-left: 14cm;
+    margin-bottom: 6cm;
+    margin-right: 10cm;
+    margin-top: 4cm
+}

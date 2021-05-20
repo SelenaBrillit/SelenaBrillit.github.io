@@ -1,0 +1,39 @@
+.logo{
+    border:none;
+    padding: 0px;
+    margin-top:0px;
+    width: 38cm;
+    height: 50px;
+
+}
+h1{
+    display: block;
+    background:rgba(6, 12, 24, 0.767);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom:0px;
+    color: rgba(13, 39, 87, 0.979);
+    font-size: 60px;
+    width: 38cm;
+
+}.gracias{
+    margin: 0 30 ;
+    padding: auto;
+    height: auto;
+
+}
+.boton{
+    background-color: rgb(66, 4, 4);
+    padding: 0px;    
+    display: block;
+    border-radius: 4px;
+    border: 12px black;
+    width: 150px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    font-style: italic;
+}
