@@ -1,15 +1,22 @@
-h1{
-    text-align: center;
-    color:black;
-    font-size: 20px;
+.logo{
     border:none;
     padding: 0px;
-    margin:0px;
-    height: 100px;
-    background:rgba(76, 128, 223, 0.979);
-    font-size: 60px;
-  
+    margin-top:0px;
+    width: 35.3cm;
+    height: 50px;
    
+    
+
+
+}
+h1{
+    display: block;
+    background:rgba(6, 12, 24, 0.767);
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom:0px;
+    color: rgba(13, 39, 87, 0.979);
+    font-size: 60px;
 
 }
 h2{
@@ -18,26 +25,41 @@ h2{
     font-size: 20px;
     border:none;
     padding: 0px;
-    margin:0px;
+    margin-left: 80px;
+    margin-top:80px;
     height: 100px;
+    width: 30cm;
     background:rgba(76, 128, 223, 0.979);
     font-size: 60px;
+    border-radius: 10px;
+    box-shadow: 0px -5px 0px 1px rgb(19, 7, 179)
+    
 }
-p{
+ 
+
+.tex{
+    
+    display:block;
     text-align: center;
     color:black;
     font-size: 40px;
-    border: 10px black;
-    padding: 0px;
-    margin:20px;
-    height: 100px;
-    background:rgba(201, 106, 138, 0.979);
+    padding: 10px;
+    margin-left:15cm ;
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    background:rgba(245, 240, 242, 0.979);
+    border-radius: 10px;
+    font-size: 24px;
+    box-shadow: 12px 12px 12px rgba(12, 12, 12, 0.5);
    
-
-    
     
 }
 body{
     background:rgb(255, 255, 255)
 
+}
+a{
+    margin-left:18cm;
+    margin-top:3px;
 }
