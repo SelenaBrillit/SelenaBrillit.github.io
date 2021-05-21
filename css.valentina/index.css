@@ -1,0 +1,15 @@
+#c{
+    display:block;
+    margin-left: 3cm;
+    text-align: center;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.color{
+    color: white;
+}
+.acep{
+    color: white;
+    text-decoration: none;
+}
