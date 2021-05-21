@@ -10,3 +10,21 @@ h1{
     width: 400px;
     margin: 60px auto;
 } 
+.llamada
+{
+    background-color: rgb(56, 50, 50);
+    color: rgb(255, 254, 254);
+    padding: 13px 0;    
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-decoration: none;
+} 
+.sugerencias
+{
+    text-align: center;
+    
+} 
