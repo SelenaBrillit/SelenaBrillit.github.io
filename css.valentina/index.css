@@ -7,9 +7,15 @@
     color: rgb(255, 255, 255);
 }
 .color{
+    display: block;
     color: white;
+    margin-right:0px ;
 }
 .acep{
     color: white;
     text-decoration: none;
+}
+.o{
+    margin-right:0px;
+    ;
 }
