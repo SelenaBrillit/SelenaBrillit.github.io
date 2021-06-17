@@ -11,28 +11,37 @@
     <h1>AUTOLIKE</h1>
     <h2>COMPRAS</h1>
     <br>
-    <form>
+    <form action="">
         <h3>LLene el siguiente formulario:</h3>
-        <h4>Nombres y apellidos: </h4>
-        <input type="text">
-        <h4>Dirección:</h4>
+        <label for="fName"><h4>Nombres y apellidos: </h4></label>
+        <input type="text" class="fName" id="fName">
+        <label for=""><h4>Dirección:</h4></label>
         <table>
-            <tr>
+           <label for=""> <tr>
                 <td>Departamento:</td>
                 <td>Provincia:</td>
                 <td>Calle:</td>
-            </tr>
+            </tr></label>
             <tr>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
-                <td><input type="text"></td>
+                <td><input type="text" class="dirDep" id="dirDep"></td>
+                <td><input type="text" class="dirDis" id="dirDis"></td>
+                <td><input type="text" class="dircal" id="dircal"></td>
             </tr>
         </table>
-        <h4>Correo electronico:</h4>
-        <input type="email" name="" id="">
-    </form>
-    <br><br>
-    <a  href="../views/ingresartargeta.html"><img class="listo" src="../Images James/Confirmar.jpg"alt="no hay logo"></a>
+        <label for=""><h4>Correo electronico:</h4></label>
+        <input type="email" name="" class="fMail" id="fMail" >
+   
+        <br><br>
+        <!-- <a href="../views/ingresartargeta.html"><input type="button"value="Registrar" name="btnRegistrar" id="btnRegistrar" onclick="registrar() "></a> -->
+
     
+    <a href=""></a>
+ 
+        <a  href="../views/ingresartargeta.html"><img class="listo" src="../Images James/Confirmar.jpg"alt="no hay logo" value="Registrar" name="btnRegistrar" id="btnRegistrar" onclick="registrar()";> </a>
+            
+        
+    </form>
+
+    <script src="../javascriptjames/formulario compras.js"></script>
 </body>
 </html>
