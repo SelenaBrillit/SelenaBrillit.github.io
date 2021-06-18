@@ -12,12 +12,16 @@
     <img class="logo" src="../Images James/aUtolike (31).png" alt="no hay logo">
     <br><br>
     <h2>Ingresar n° de tarjeta</h1>
-    <input class="tex" placeholder="Número de targeta "type="number">
+    <input class="tex" placeholder="Número de tarjeta "type="number" id="tG" maxlength=7>
     <br><br>
     <h2>Ingrese cvv</h1>
-    <input class="tex" placeholder="xxx" type="number" data-mask="999" max="3" minlength="1" >
+    <input class="tex" placeholder="xxx" type="number" data-mask="999" max="3" minlength="1" id="cV" maxlength="20" >
     <br><br><br>
-    <a href="../views/descargarfacturas.html"><img src="../Images James/Confirmar.jpg"width="60"  alt="no hay logo"></a>
    
+    <a href="../views/descargarfacturas.html"><img class="listo" src="../Images James/Confirmar.jpg"width="60"  alt="no hay logo"value="config" name="btnRegistrar" id="btnRegistrar" onclick="config()" ;></a>
+
+    <input type="button" value="Actualizar" onclick="location.reload()" />
+
+   <script src="../javascriptjames/ingresartargeta.js"></script>
 </body>
 </html>
