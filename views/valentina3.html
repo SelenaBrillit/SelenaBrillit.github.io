@@ -21,6 +21,30 @@
         </STYLE>
        
         <H1> INICIAR SESION</H1>
+       
+        <script>
+            var cuerpo = document.getElementById("cuerpo");
+            var color = prompt("Indicar el color de fondo (Negro/Azul/Rojo): ").toUpperCase();
+        
+            if (color != "NEGRO" && color != "AMARILLO" && color != "ROJO")
+            {
+                alert("Ese color no es valido");
+            }
+            else if (color == "NEGRO")
+            {
+                cuerpo.style.background="black";
+            }
+            else if (color == "ROJO")
+            {
+                cuerpo.style.backgroundColor="red";
+            }
+            else
+            {
+                cuerpo.style.backgroundColor = "yellow";
+            }
+    
+            
+        </script>
 <br>
 <p style="text-align:center"><input placeholder="USUARIO"></p>
 <p style="text-align:center"><input type="password"placeholder="CONTRASEÑA"></p>
