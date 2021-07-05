@@ -15,8 +15,54 @@
 }
 
 #none{
-    text-decoration: none;}
+    text-decoration: none;
+    border-radius: 15px;
+    
+    
+    }
+    
 
 #phone{
     border-radius: 40%; 
+    
+}
+#btn{
+    background-color:white;
+    border-radius: 15px;
+
+}
+#btn-Reg{
+    margin-left: 16.5cm;
+    ;
+    
+    
+}
+#btnReg{
+    border-radius: 15px;
+    height: 30px;
+    width: 2cm;
+    background-color: blue;
+    box-shadow: 3px 3px 8px 2px rgb(73, 79, 155);
+}
+#c{
+    margin-top: 7px;
+}
+h6{
+    color: white;
+}
+#container-2{
+margin-left: 16.5cm;
+margin-top: 0.5cm;
+
+}
+#btn-2{
+    border-radius: 11px;
+    height: 1.1cm;
+    background: rgb(7, 77, 77);
+    box-shadow: 3px 3px 8px 2px rgb(98, 188, 216);
+}
+
+h5{
+    color: white;
+    margin-top: 9px;
 }

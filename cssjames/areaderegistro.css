@@ -1,0 +1,78 @@
+#container-gen{
+    
+    display:block;
+    background-color: teal;
+    margin-left: 7cm;
+    width: 18cm;
+    height: 21cm;
+    border-radius: 14px;
+
+}
+#container-img{
+    margin-left: 1.9cm;
+    padding-top: 1cm ;
+    
+}
+#img{
+    height:6cm;
+    width:10cm;
+    margin-left: 1.9cm;
+    border-radius: 14px;
+}
+#containerData{
+    margin-left: 1.6cm;
+    margin-top: 1.5cm;
+    background-color: rgb(131, 148, 36);
+    width: 15cm;
+    height: 12cm;
+    border-radius: 14px;
+    
+}
+#texNam{
+    font-size: 22px;
+}
+#texAp{
+    font-size: 22px;
+}
+#texCor{
+    font-size: 22px;
+
+}
+#texPass{
+    font-size: 22px;
+}
+#container-name{
+    margin-left: 4.6cm;
+    margin-bottom:1cm ;
+    margin-top: 1cm;
+}
+#container-apel{
+    margin-left: 4.6cm;
+    margin-bottom:1cm ;
+    margin-top: 1cm;
+}
+#container-email{
+    margin-left: 4.6cm;
+    margin-bottom:1cm ;
+    margin-top: 1cm;
+}
+#container-passw{
+    margin-left: 4.6cm;
+    margin-bottom:1cm ;
+    margin-top: 1cm;
+}
+#containerData1{
+    padding-top: 1cm 
+}
+#containerB{
+    border-radius: 20px;
+    margin-left: 11cm;
+    
+}
+#btn-Reg{
+border-radius: 20px;
+color: white;
+background-color: teal;
+height: 40px;
+margin-top: -11px;
+}
