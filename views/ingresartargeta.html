@@ -8,19 +8,22 @@
     <link rel="stylesheet" href="../cssjames/ingresartargeta.css">
 </head>
 <body>
-<form action="">
+<form onsubmit="return validacion()" id="form">
     <h1>autololike</h1>
     <img class="logo" src="../Images James/aUtolike (31).png" alt="no hay logo">
     <br><br>
     <h2>Ingresar n° de tarjeta</h1>
-    <input class="tex" placeholder="Número de tarjeta "type="number" id="tG" maxlength=7>
+    <input class="tex" placeholder="Número de tarjeta "type="number" id="tG" >
     <br><br>
     <h2>Ingrese cvv</h1>
-    <input class="tex" placeholder="xxx" type="number" data-mask="999" max="3" minlength="1" id="cV" maxlength="20" >
+    <input class="tex" placeholder="xxx" type="number" data-mask="999" max="999" minlength="1" id="cV" maxlength="20" >
     <br><br><br>
+
+    <button  value="Registrar" name="btnRegistrar" id="btnRegistrar" type="submit" > Enviar
+
+    </button>
    
-    <a href="../views/descargarfacturas.html" ><img class="listo" src="../Images James/Confirmar.jpg"width="60"  alt="no hay logo"value="config" name="btnRegistrar" id="btnRegistrar" onclick="config()";  ></a>
-</form>
+    
  
 
    <script src="../javascriptjames/ingresartargeta.js"></script>

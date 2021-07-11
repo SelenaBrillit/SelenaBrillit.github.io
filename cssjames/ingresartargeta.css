@@ -63,3 +63,11 @@ a{
     margin-left:18cm;
     margin-top:3px;
 }
+#btnRegistrar{
+    background-color: blue;
+    width: 6cm;
+    height: 1.5cm;
+    margin-left: 15.6cm;
+    border-radius: 23px;
+    margin-top: 3cm;
+}

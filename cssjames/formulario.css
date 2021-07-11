@@ -39,3 +39,11 @@ body{
     
     
 }
+#btnRegistrar{
+    background-color: blue;
+    width: 3cm;
+    height: 1cm;
+    margin-left: 13cm;
+    border-radius: 23px;
+    margin-top: 1cm;
+}
