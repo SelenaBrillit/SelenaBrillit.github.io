@@ -1,123 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autolike</title>
-    <link rel="stylesheet" href="../cssjames/jcarlos.css">
-    <body background="../imagenes valentina/aUtolike (4).png"></body>
-    <script>
-      alert("CONOCE NUESTROS PRODUCTOS");//1 y 2
-      document.write("lo que tu quieras");
-  </script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autolike</title>
+  <link rel="stylesheet" href="../cssjames/jcarlos.css">
+  <script src="../javascriptjames/cargarDB.js"></script>
+
+<body background="../imagenes valentina/aUtolike (4).png"></body>
+<script>
+  alert("CONOCE NUESTROS PRODUCTOS");//1 y 2
+  document.write("lo que tu quieras");
+</script>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-yqe_reyPwCyjCBjuu9QmfkCrs00QVGE",
+    authDomain: "base-de-datos-6b557.firebaseapp.com",
+    projectId: "base-de-datos-6b557",
+    storageBucket: "base-de-datos-6b557.appspot.com",
+    messagingSenderId: "198300522313",
+    appId: "1:198300522313:web:10142b2fcc34f711e1ac98"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </head>
 
-<body>     
-    <h1>Buscar producto</h2>
-    <article class= "james"> 
-      <article class="card">
-        <img src="../Imagenes Carlos/alternador.jpg" alt="HAMBIENTADOR" class="img">
-        <div class="contenedor">
-            <h2 class="title">alternador</h2>
-            <p class="copy">$200</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+
+
+<body>
+  <h1>Buscar producto</h1>
+  <article class="james">
+    <article class="card">
+      <img src="../Imagenes Carlos/alternador.jpg" alt="HAMBIENTADOR" class="img">
+      <div class="contenedor">
+        <h2 class="title">alternador</h2>
+        <p class="copy">$200</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
-    <article class="james1">
-      <article class="card">
-        <img src="../Imagenes Carlos/catalizador.jpg" alt="tubo de escape" class="img">
-        <div class="contenedor">
-            <h2 class="title">tubo de escape</h2>
-            <p class="copy">$120</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+  </article>
+  <article class="james1">
+    <article class="card">
+      <img src="../Imagenes Carlos/catalizador.jpg" alt="tubo de escape" class="img">
+      <div class="contenedor">
+        <h2 class="title">tubo de escape</h2>
+        <p class="copy">$120</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
-      <br>
-      <article class="james2">
-      <article class="card">
-        <img src="../Imagenes Carlos/cinturon de seguridad.png" alt="cinturon de seguridad" class="img">
-        <div class="contenedor">
-            <h2 class="title">Cinturon de seguridad</h2>
-            <p class="copy">$15</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+  </article>
+  <br>
+  <article class="james2">
+    <article class="card">
+      <img src="../Imagenes Carlos/cinturon de seguridad.png" alt="cinturon de seguridad" class="img">
+      <div class="contenedor">
+        <h2 class="title">Cinturon de seguridad</h2>
+        <p class="copy">$15</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
-      <br>
-      <article class="james3">
-      <article class="card">
-        <img src="../Imagenes Carlos/Cadena de Nieve.jpeg" alt="llantas" class="img">
-        <div class="contenedor">
-            <h2 class="title">llantas</h2>
-            <p class="copy">$150</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+  </article>
+  <br>
+  <article class="james3">
+    <article class="card">
+      <img src="../Imagenes Carlos/Cadena de Nieve.jpeg" alt="llantas" class="img">
+      <div class="contenedor">
+        <h2 class="title">llantas</h2>
+        <p class="copy">$150</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
-      <br>
-      <article class="james4">
-      <article class="card">
-        <img src="../Imagenes Carlos/Asiento mas Timon.jpg" alt="DEPOSITO DE COMBUSTIBLE" class="img">
-        <div class="contenedor">
-            <h2 class="title">Repuestos internos</h2>
-            <p class="copy">$130</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+  </article>
+  <br>
+  <article class="james4">
+    <article class="card">
+      <img src="../Imagenes Carlos/Asiento mas Timon.jpg" alt="DEPOSITO DE COMBUSTIBLE" class="img">
+      <div class="contenedor">
+        <h2 class="title">Repuestos internos</h2>
+        <p class="copy">$130</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
-      <br>
-      <article class="james5">
-      <article class="card">
-        <img src="../Imagenes Carlos/Bateria.jpg" alt="baterias" class="img">
-        <div class="contenedor">
-            <h2 class="title">Bateria</h2>
-            <p class="copy">$100</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+  </article>
+  <br>
+  <article class="james5">
+    <article class="card">
+      <img src="../Imagenes Carlos/Bateria.jpg" alt="baterias" class="img">
+      <div class="contenedor">
+        <h2 class="title">Bateria</h2>
+        <p class="copy">$100</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
-      <br>
-      <article class="james6">
-      <article class="card">
-        <img src="../Imagenes Carlos/bombas de agua.jpg" alt="inflador" class="img">
-        <div class="contenedor">
-            <h2 class="title">Inflador</h2>
-            <p class="copy">$150.00</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+  </article>
+  <br>
+  <article class="james6">
+    <article class="card">
+      <img src="../Imagenes Carlos/bombas de agua.jpg" alt="inflador" class="img">
+      <div class="contenedor">
+        <h2 class="title">Inflador</h2>
+        <p class="copy">$150.00</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
-      <br>
-      <article class="james7">
-      <article class="card">
-        <img src="../Imagenes Carlos/car smartphone.jpg" alt="porta esmart" class="img">
-        <div class="contenedor">
-            <h2 class="title">Porta smarphone</h2>
-            <p class="copy">$80</p>
-            <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
-        </div>
-      </article>
+  </article>
+  <br>
+  <article class="james7">
+    <article class="card">
+      <img src="../Imagenes Carlos/car smartphone.jpg" alt="porta esmart" class="img">
+      <div class="contenedor">
+        <h2 class="title">Porta smarphone</h2>
+        <p class="copy">$80</p>
+        <a href="../views/metododepago.html" class="llamada">COMPRAR</a>
+      </div>
     </article>
+  </article>
+
+
+  <div id="imagenes">
+
+  </div>
 
 
 
+  <br><br><br>
+  <p>DERECHOS RESERVADOS</p>
+  <p>AUTOlike Estudio 2021 </p>
+  <p>Buscanos en todas nuestras redes como AUTOlike</p>
+  <br>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
 
 
-    <br><br><br>
-    <p>DERECHOS RESERVADOS</p>
-    <p>AUTOlike Estudio 2021 </p>
-    <p>Buscanos en todas nuestras redes como AUTOlike</p> 
-    <br> 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-yqe_reyPwCyjCBjuu9QmfkCrs00QVGE",
+    authDomain: "base-de-datos-6b557.firebaseapp.com",
+    projectId: "base-de-datos-6b557",
+    storageBucket: "base-de-datos-6b557.appspot.com",
+    messagingSenderId: "198300522313",
+    appId: "1:198300522313:web:10142b2fcc34f711e1ac98"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
 
 
-
-
-
-
-    
 </body>
+
+
 </html>

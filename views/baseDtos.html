@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subir archivos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="../cssjames/imagenes.css">
+</head>
+
+<body>
+    <div id="tarea">
+    <div class="container">
+        <div class="row" >
+            
+                <!-- Aqui iran las imagenes -->
+                
+            
+            <div class="col-sm-4" >
+                <div style="margin-left: 1pxcm; background-color: rgb(150, 110, 118); width: 9.3cm;border-radius: 6px;" >
+                <form id="form-imagenes">
+                    <label class="btn btn-label">
+                        <input type="file" id="fichero" name="fichero" class="d-none">
+                        <img src="../Images James/17409946451553073813-128.png" alt="descargar" class="img-responsive" style="margin-left: 3cm;">
+                    </label>
+                </form>
+                </div>
+                <div class="d-none" id="progress" style="background: darkgoldenrod;" >
+                    <div class="progress" >
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            aria-valuemax="100" id="barra-de-progreso"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: rgb(7, 136, 110);width: 9.3cm;margin-left: 3.1cm;border-radius: 6px;">
+    <div style="margin-top: 6px;margin-left: 0.7cm; background-color: rgb(162, 162, 214); width: 8cm; border-radius: 6px;"><input type="text" placeholder="producto" id="producto" value="" style="margin-left: 2cm; border-radius: 6px;"></input></div>
+    <div style="margin-top: 30px;margin-left: 0.7cm; background-color: rgb(238, 205, 192);width: 8cm;border-radius: 6px;"><input type="text" placeholder="precio" id="precio" value=""style="margin-left: 2cm; border-radius: 6px; "></input> <button id="btn-s" onclick="refres();" style="background: darkorange;margin-left: 2cm;">SUBIR OTRO ARCHIVO</button></div>
+    </div>
+</div>
+    <div id="imagenes"  style="margin-left: 19cm;margin-top: -6cm;"></div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyD-yqe_reyPwCyjCBjuu9QmfkCrs00QVGE",
+          authDomain: "base-de-datos-6b557.firebaseapp.com",
+          projectId: "base-de-datos-6b557",
+          storageBucket: "base-de-datos-6b557.appspot.com",
+          messagingSenderId: "198300522313",
+          appId: "1:198300522313:web:10142b2fcc34f711e1ac98"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+    
+            <script src="../javascriptjames/levi.js"></script>
+
+</body>
+
+</html>
