@@ -7,9 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../cssjames/areaderegistro.css">
     <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body background="../imagenes valentina/aUtolike (4).png">
+    <div id="abc">
+        <div class="bg-white">
+                <div class="d-flex justify-content-center row">
+                    <nav class="navbar navbar-expand-lg navbar-white bg-white col-md-9">
+                      <div class="container-fluid">
+                      
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto ">
+                          <li class="nav-item active">
+                            <a class="nav-link"  href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Registro<span class="sr-only"></span></a>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+              </div>    
+          </div>
+        </div>
+                  <!-- Modal  -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registro de usuario</h5>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group">
+                          <!-- poner un fromt me causa una tranderencia en la comunicaion  -->
+                            <label >Correo:</label>
+                            <input type="email" id="ra" class="form-control">
+                            <label >Contraseña</label>
+                            <input type="password" id="re" class="form-control">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnCancelar">Cancelar</button>
+                        <button type="button" class="btn btn-primary" onclick="enviar()">Guardar</button>
+                      </div>
+                      <div class="alert alert-danger" role="alert" style="display: none;"></div>
+                    </div>
+                  </div>
+                </div>
 
     <div id="container-gen">
         <div id="container-img">
@@ -19,22 +69,9 @@
         </div>
         <div id="containerData">
 
-            <form action="">
                 <div id="containerData1">
                 <div id="container-name">
-
-                    <div id="container-name-cont"><label for="txtNom" id="texNam">Nombres:</label></div>
-
-                    <div> <input type="text" name="txtNom" id="txtNom"> </div>
-
-
-                </div>
-
-                <div id="container-apel">
-                    <div><label for="txtApe" id="texAp">Apellidos:</label></div>
-
-                    <div><input type="text" name="txtApe" id="txtApe"></div>
-
+ 
                 </div>
 
                 <div id="container-email">
@@ -44,20 +81,29 @@
                 </div>
 
                 <div id="container-passw">
-                    <div><label for="txtPass" id="texPass">Contraseña:</label></div>
-                    <div><input type="password" name="txtCor" id="txtCor"></div>
+                    <div><label for="txtPass" id="ri">Contraseña:</label></div>
+                    <div><input type="password" name="txtCor" id="ro"></div>
 
                 </div>
-                <div id="containerB"><button id="btn-Reg">Registrarse</button></div>
+                <div id="containerB"><button onclick="acceso()" id="btn-Reg">INGRESAR</button></div>
             </div>
-            </form>
-        </div>
+            <div>
+                <h2 d="login"> </h2>
+            </div>
+            <script>
+              alert("INGRESAR");
+              document.write("lo que tu quieras");
+          </script>
+         
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
 
-    </div>
-<script>
-     
-</script>
+      <script src="../javascript.selena/areaderegisto.js"></script>
 </body>
 
 </html>
