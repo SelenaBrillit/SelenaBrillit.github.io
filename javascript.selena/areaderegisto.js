@@ -77,5 +77,5 @@ alert(errorMessage);
        
       }
     });
-    document.write("Lo que tu quieras");
+   
     
