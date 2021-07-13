@@ -3,6 +3,7 @@ const storageRef = firebase.storage().ref();
 //conexion a base de datos
 const baseDeDatos = firebase.firestore();
 const galeria = document.getElementById("imagenes");
+
 const eliminarTarea = (unaTareaX) => { baseDeDatos.collection("imagenes").doc(unaTareaX).delete(); }
 const obteniendoImagenes = (unaFuncionX) => {
     baseDeDatos.collection("imagenes").onSnapshot(unaFuncionX);

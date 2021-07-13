@@ -1,27 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <body background="../imagenes valentina/aUtolike (4).png"></body>
-    <title>LIBRO DE RECLAMACIONES</title>
-    <style>
-        h1{
-            color:white;
-        }
-    </style>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css">
+<title>LIBRO DE RECLAMACIONES</title>
+<style>
+    h1 {
+        color: white;
+    }
+</style>
+
 </head>
-<body>
-    <TITLE>LOBRO DE RECLAMACIONES</TITLE>
+
+<body background="../imagenes valentina/aUtolike (4).png" >
+    <TITLE>LIBRO DE RECLAMACIONES</TITLE>
     <STYLE type="text/css">
-     H1 { text-align: center}
+        H1 {
+            text-align: center
+        }
     </STYLE>
-    <h1><p style="text-align:center">LIBRO DE RECLAMACIONES</p></h1>
-    <p style="text-align:center"><textarea cols="30" rows="10"></textarea></p>
+
+
+    <h1>
+        <p style="text-align:center;">LIBRO DE RECLAMACIONES</p>
+    </h1>
+
+    <div style="margin-top: 4cm;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <form id="task-form">
+                            <div class="form-group">
+                                <input type="text" id="task-title" class="form-control"
+                                    placeholder="Correo electrónico">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="task-description" rows="3" class="form-control"
+                                    placeholder="Descripcion de su reclamo"></textarea>
+                            </div>
+                            <button class="btn btn-primary" id="btn-task-form">
+                                Enviar reclamo
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div id="task-container" class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div style="margin-left: 20cm; margin-top: -9cm;" ><img src="../Images James/reclamosareglo.jpg" alt="" style="width: 12cm; height: 12cm; border-radius: 12px;"></div>
+
+        <div style="margin-top: -3cm; margin-left: 4cm;"><a href="../views/jcarlos.html"><button style="background-color:white; "  >Volver a productos</button></a></div>
         
-        <br>
-        <p style="text-align:center"><button><a style="text-decoration: none;" href="../views/selena5.html">Enviar Comentario</a></button></p>
-        <br>
+
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+    apiKey: "AIzaSyD-yqe_reyPwCyjCBjuu9QmfkCrs00QVGE",
+    authDomain: "base-de-datos-6b557.firebaseapp.com",
+    projectId: "base-de-datos-6b557",
+    storageBucket: "base-de-datos-6b557.appspot.com",
+    messagingSenderId: "198300522313",
+    appId: "1:198300522313:web:10142b2fcc34f711e1ac98"
+     };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="../javascriptjames/subirReclamo.js"></script>
 </body>
+
 </html>
