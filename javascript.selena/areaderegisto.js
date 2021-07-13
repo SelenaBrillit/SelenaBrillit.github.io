@@ -34,7 +34,7 @@ function acceso() {
   var email = document.getElementById("ri").value;
   var pass = document.getElementById("ro").value;
 
-  firebase.auth().signInWithEmailAndPassword("email", pass)
+  firebase.auth().signInWithEmailAndPassword(email, pass)
     .then((userCredential) => {
 
       var user = userCredential.user; 
