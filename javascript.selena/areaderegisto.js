@@ -27,10 +27,10 @@ function acceso() {
   firebase.auth().signInWithEmailAndPassword(email, pass)
     .then((userCredential) => {
 
-      var user = userCredential.user;
+      var user = userCredential.user;  alert("Accediste");
+    
 
       // document.getElementById("abc").style.display = "none";
-      alert("Accediste");
     })
     .catch((error) => {
       var errorCode = error.code;
@@ -52,20 +52,20 @@ function cerrar() {
 
 // observador de estado de autenticacion
 
-firebase.auth().onAuthStateChanged((user) => {
-  if (user) {
+//firebase.auth().onAuthStateChanged((user) => {
+  //if (user) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
-    var uid = user.uid;
-    document.getElementById("login").innerHTML = `<p>Logueado ` + user.email + `</p>` + `<button onclick=cerrar();>cerrar sesion</button>`;
+   // var uid = user.uid;
+   // document.getElementById("login").innerHTML = `<p>Logueado ` + user.email + `</p>` + `<button onclick=cerrar();>cerrar sesion</button>`;
 
     // ...
-  } else {
+ // } else {
     // User is signed out
     // ...
-    document.getElementById("login").innerHTML = "no Logueado ";
-    document.getElementById("abc").style.display = "block";
+  //  document.getElementById("login").innerHTML = "no Logueado ";
+   // document.getElementById("abc").style.display = "block";
 
-  }
-});
+//  }
+//});
 
