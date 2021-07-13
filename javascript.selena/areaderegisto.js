@@ -17,7 +17,7 @@ function enviar() {
     .then((userCredential) => {
       // Signed in
       var user = userCredential.user;
-      alert("Se resguistro correctamente");
+      alert("Se reguistro correctamente");
       // ...
     })
     .catch((error) => {
@@ -37,13 +37,15 @@ function acceso() {
   firebase.auth().signInWithEmailAndPassword("email", pass)
     .then((userCredential) => {
 
-      var user = userCredential.user;  alert("Accediste");
+      var user = userCredential.user; 
+       alert("Accediste");
     
 
       document.getElementById("abc").style.display = "none";
     })
     .catch((error) => {
       var errorCode = error.code;
+      
       var errorMessage = error.message;
       alert(errorMessage);
 
