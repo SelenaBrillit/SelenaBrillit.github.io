@@ -38,8 +38,9 @@ firebase.auth().signInWithEmailAndPassword(email, pass)
 .then((userCredential) => {
 
 var user = userCredential.user;
-alert("Accediste");
+
 document.getElementById("abc").style.display="none";
+alert("Accediste");
 })
 .catch((error) => {
 var errorCode = error.code;
