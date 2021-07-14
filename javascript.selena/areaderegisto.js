@@ -1,13 +1,3 @@
-
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyD-yqe_reyPwCyjCBjuu9QmfkCrs00QVGE",
-    authDomain: "base-de-datos-6b557.firebaseapp.com",
-    projectId: "base-de-datos-6b557",
-    storageBucket: "base-de-datos-6b557.appspot.com",
-    messagingSenderId: "198300522313",
-    appId: "1:198300522313:web:10142b2fcc34f711e1ac98"
-  };
  
 // codigo para crear o registrar el usuario
 function enviar() {
@@ -31,7 +21,7 @@ function enviar() {
 
 // acceso de usuario existente
 function acceso() {
-  var email = document.getElementById("ri").value;
+  var email = document.getElementById("txtCor").value;
   var pass = document.getElementById("ro").value;
 
   firebase.auth().signInWithEmailAndPassword(email, pass)
@@ -39,6 +29,7 @@ function acceso() {
 
       var user = userCredential.user; 
        alert("Accediste");
+       window.location="../views/interfazDueño.html";
     
 
       document.getElementById("abc").style.display = "none";
@@ -52,15 +43,15 @@ function acceso() {
     });
 
 }
-function cerrar() {
-  firebase.auth().signOut()
-    .then(function () {
-      console.log("salir");
-    })
-    .catch(function (error) {
-      console.log("error");
-    })
-}
+// // function cerrar() {
+// //   firebase.auth().signOut()
+// //     .then(function () {
+// //       console.log("salir");
+// //     })
+// //     .catch(function (error) {
+// //       console.log("error");
+// //     })
+// }
 
 // observador de estado de autenticacion
 
